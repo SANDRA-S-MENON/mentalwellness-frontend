@@ -20,7 +20,7 @@ const Home = () => {
           <tr>
             <td>Admin</td>
             <td>
-              <button className="btn btn-secondary" onClick={() => navigate('/admin-login')}>
+              <button className="btn btn-secondary" onClick={() => navigate('/adminlogin')}>
                 Admin Login
               </button>
             </td>

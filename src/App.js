@@ -5,6 +5,8 @@ import SignIn from './components/SignIn';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MainHome from './components/MainHome';
 import Home from './components/Home';
+import AdminLogin from './components/AdminLogin';
+import AdminHome from './components/AdminHome';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Route path='/signin' element={<SignIn/>}/>
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/mainhome' element={<MainHome/>}/>
+      <Route path='/adminhome' element={<AdminHome/>}/>
+      <Route path='/adminlogin' element={<AdminLogin/>}/>
     </Routes>
     
     </BrowserRouter>
