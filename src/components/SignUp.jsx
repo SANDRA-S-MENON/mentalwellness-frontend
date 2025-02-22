@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import NavBar from './NavBar'
 
 const SignUp = () => {
     const [data,changeData]=useState(
@@ -37,7 +38,7 @@ const SignUp = () => {
             console.log(response.data);
             if (response.data.status === "success") {
               alert("Registration successful");
-            //   window.location.href = "/signin"; // Redirect to sign in after successful signup
+              window.location.href = "/signin"; // Redirect to sign in after successful signup
             } else {
               alert("Registration failed. Please try again.");
             }
@@ -49,6 +50,7 @@ const SignUp = () => {
       };
     return (
         <div>
+            <NavBar/>
 
             <div className="container">
                 <div className="row">

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import NavBar from './NavBar';
 
 const SignIn = () => {
     const [data, setData] = useState({
@@ -20,7 +21,7 @@ const SignIn = () => {
         if (response.data.status === "success") {
           sessionStorage.setItem('email', data.Email);
           alert("Login successful");
-        //   window.location.href = "/mainhome"; // Redirect after successful login
+          window.location.href = "/mainhome"; // Redirect after successful login
         } else {
           alert("Login failed. Please try again.");
         }
@@ -33,6 +34,7 @@ const SignIn = () => {
 
   return (
     <div>
+      <NavBar/>
         <div className="container">
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
